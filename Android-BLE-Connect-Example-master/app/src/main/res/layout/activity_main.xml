@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    android:background="@color/colorBackgroundLayout"
+    tools:context="com.example.joelwasserman.androidbleconnectexample.MainActivity">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Connected Met"
+        android:textColor="@android:color/black"
+    android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp"
+        android:text="All Mets"
+        android:textColor="@android:color/black"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/StartScanButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:text="Scan"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/StartScanButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="125dp"
+        android:text="Ring"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Stop Scanning"
+        android:id="@+id/StopScanButton"
+        android:layout_marginTop="40dp" android:visibility="invisible"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to device with index: "
+        android:id="@+id/ConnectButton"
+        android:layout_alignParentBottom="true" android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect from device"
+        android:id="@+id/DisconnectButton"
+        android:layout_alignParentBottom="true" android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/PeripheralTextView"
+        android:layout_width="243dp"
+        android:layout_height="89dp"
+        android:layout_above="@+id/InputIndex"
+        android:layout_marginBottom="-50dp"
+        android:layout_toStartOf="@+id/InputIndex"
+        android:maxLines="30"
+        android:scrollbars="vertical"
+        android:visibility="invisible" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:cursorVisible="false"
+        android:id="@+id/InputIndex"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/textviewborder" android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp" />
+
+    <Button
+        android:id="@+id/offBuzzer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/send"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="36dp"
+        android:text="Off"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+
+        android:layout_marginEnd="6dp"
+        android:text="Button"
+        android:visibility="invisible" />
+
+
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+
+
+        android:text="Searching for mets"
+        android:textAlignment="center" />
+
+
+
+    <ListView
+        android:id="@+id/_connectedList"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:layout_marginTop="35dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="150dp"
+        android:layout_weight="0.01"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+    android:id="@+id/old_device"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+
+    android:layout_marginTop="35dp"
+    android:background="@color/colorBackground"
+    android:visibility="visible">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:src="@drawable/sp1" />
+
+
+    <TextView
+        android:id="@+id/tvDeviceName12"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="75dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="0dp"
+        android:onClick="openSettings"
+        android:src="@drawable/setting" />
+
+    <ImageView
+        android:id="@+id/scan_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClickScan"
+        android:src="@drawable/refresh_b" />
+</RelativeLayout>

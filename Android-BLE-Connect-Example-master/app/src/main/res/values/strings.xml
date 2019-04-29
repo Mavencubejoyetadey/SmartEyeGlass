@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MET</string>
+    <string name="title_activity_maps">Met Mapping</string>
+    <string name="title_activity_maps_wifi">Met Mapping</string>
+    <string name="google_maps_key">AIzaSyAH24AYCAYGeSaHKKE8ab1IM5l0-nYaXW4</string>
+    <string name="title_activity_maps_device_not_found">Met Mapping</string>
+</resources>

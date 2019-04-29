@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundLayout"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white"
+    android:text="Met Tracking"
+    android:gravity="center"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"
+    />
+    <LinearLayout
+         android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/shadow"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:paddingLeft="10dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:paddingLeft="10dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/batimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+
+
+        android:src="@drawable/b100" />
+    <TextView
+        android:id="@+id/textView2_bat"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:paddingLeft="10dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:paddingBottom="5dp"
+    android:paddingRight="5dp">
+        <ImageView
+            android:id="@+id/imageView412"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+
+            android:paddingRight="10dp"
+            android:src="@drawable/sp1" />
+    <Button
+        android:id="@+id/recon"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/connectedColor"
+        android:text="Reconnect"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBackground"/>
+</LinearLayout>
+    </LinearLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="110dp"
+        />
+
+
+    <com.example.joelwasserman.androidbleconnectexample.CanvasView
+        android:id="@+id/canvasView"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="215dp"
+        android:layout_marginBottom="110dp"
+        android:visibility="invisible"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="215dp"
+        android:layout_marginBottom="110dp"
+        android:gravity="center"
+
+        android:background="@color/colorBackground">
+        <ImageView
+
+            android:layout_width="820dp"
+            android:layout_height="820dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+
+            android:src="@drawable/outer_circle_b" />
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+
+            android:src="@drawable/str_circle_b" />
+
+        <ImageView
+
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+
+
+            android:layout_weight="1"
+            android:src="@drawable/center_circle" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorBackgroundActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/buttonMap"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:onClick="onClickMapFound"
+            android:src="@drawable/map" />
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/button4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="onClickRing"
+            android:paddingTop="10dp"
+            android:src="@drawable/alert" />
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+
+
+
+        <ImageView
+            android:id="@+id/button41"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:onClick="onClickChangeDevice"
+            android:src="@drawable/eyeglass_icon_b" />
+    </LinearLayout>
+</LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/txt"
+    android:scrollbars="vertical" android:visibility="invisible"/>
+
+
+</RelativeLayout>
